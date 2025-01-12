@@ -2,8 +2,9 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const categorySchema = new Schema({
-  category_id: { type: Number, required: true, unique: true },
+  id_category: { type: Number, required: true, unique: true },
   name: { type: String, required: true },
+  images: { type: String, required: true },
 });
 
 const Category = mongoose.model("Categories", categorySchema);
